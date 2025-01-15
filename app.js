@@ -1,3 +1,4 @@
+// 初期の単語リスト
 const words = [
     { word: "cat", answer: "猫" },
     { word: "dog", answer: "犬" },
@@ -12,12 +13,14 @@ const nextWordButton = document.getElementById('next-word');
 const addWordButton = document.getElementById('add-word');
 const wordList = document.getElementById('word-list');
 
+// 単語を表示
 function displayWord() {
     const currentWord = words[currentIndex];
     wordElement.textContent = currentWord.word;
     wordCard.dataset.answer = currentWord.answer;
 }
 
+// 単語一覧を更新
 function updateWordList() {
     wordList.innerHTML = '';
     words.forEach((item, index) => {
@@ -38,6 +41,7 @@ function updateWordList() {
     });
 }
 
+// イベントリスナー
 showAnswerButton.addEventListener('click', () => {
     wordElement.textContent = words[currentIndex].answer;
 });
@@ -62,5 +66,14 @@ addWordButton.addEventListener('click', () => {
     }
 });
 
+// 初期設定
 displayWord();
 updateWordList();
+
+// PWA: サービスワーカーの登録
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker registered successfully.'))
+        .catch(error => console.error('Service Worker registration failed:', error));
+}
+
