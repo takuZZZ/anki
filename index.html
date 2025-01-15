@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単語暗記システム</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007bff">
+</head>
+<body>
+    <div class="container">
+        <h1>単語暗記</h1>
+        <div class="word-card" id="word-card">
+            <p id="word">単語を表示</p>
+        </div>
+        <button id="show-answer">答えを見る</button>
+        <button id="next-word">次の単語</button>
+        <h3>単語を追加:</h3>
+        <input type="text" id="new-word" placeholder="単語">
+        <input type="text" id="new-answer" placeholder="答え">
+        <button id="add-word">追加</button>
+        <h3>単語一覧:</h3>
+        <ul id="word-list"></ul>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(() => console.log('Service Worker registered'))
+                .catch(error => console.error('Service Worker registration failed:', error));
+        }
+    </script>
+</body>
+</html>
 
