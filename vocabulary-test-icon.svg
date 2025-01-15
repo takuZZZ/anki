@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- 背景の白い丸 -->
+  <circle cx="256" cy="256" r="240" fill="white" stroke="#2563eb" stroke-width="16"/>
+  
+  <!-- ノートの形 -->
+  <rect x="136" y="136" width="240" height="300" fill="white" stroke="#2563eb" stroke-width="8" rx="20"/>
+  
+  <!-- 横線 -->
+  <line x1="156" y1="200" x2="356" y2="200" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="156" y1="250" x2="356" y2="250" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="156" y1="300" x2="356" y2="300" stroke="#94a3b8" stroke-width="4"/>
+  <line x1="156" y1="350" x2="356" y2="350" stroke="#94a3b8" stroke-width="4"/>
+  
+  <!-- テストの設問例 -->
+  <text x="176" y="190" font-family="Arial, sans-serif" font-size="24" fill="#1e40af">Apple</text>
+  <text x="276" y="190" font-family="Arial, sans-serif" font-size="24" fill="#64748b">りんご</text>
+  
+  <text x="176" y="240" font-family="Arial, sans-serif" font-size="24" fill="#1e40af">Book</text>
+  <text x="276" y="240" font-family="Arial, sans-serif" font-size="24" fill="#64748b">本</text>
+  
+  <!-- チェックマーク -->
+  <path d="M166 180 L176 190 L186 170" stroke="#22c55e" stroke-width="4" fill="none"/>
+  <path d="M166 230 L176 240 L186 220" stroke="#22c55e" stroke-width="4" fill="none"/>
+</svg>
