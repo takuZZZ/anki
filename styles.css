@@ -1,4 +1,3 @@
-/* 全体の基本スタイル */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -9,8 +8,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
-/* コンテナのデザイン */
 .container {
     background: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -19,14 +16,10 @@ body {
     width: 300px;
     text-align: center;
 }
-
-/* タイトル */
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
 }
-
-/* 単語カード */
 .word-card {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -34,8 +27,6 @@ h1 {
     margin-bottom: 20px;
     background: #f4f4f4;
 }
-
-/* ボタンのデザイン */
 button {
     background-color: #007bff;
     color: white;
@@ -48,8 +39,6 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
-/* 入力フィールドのデザイン */
 input {
     margin: 10px 0;
     padding: 8px;
@@ -57,14 +46,10 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
-/* 単語一覧のリスト */
 #word-list {
     list-style-type: none;
     padding: 0;
 }
-
-/* リストアイテムのデザイン */
 #word-list li {
     display: flex;
     justify-content: space-between;
@@ -74,15 +59,10 @@ input {
     border-radius: 5px;
     background-color: #f4f4f4;
 }
-
-/* リスト内のボタン */
 #word-list button {
     background-color: #ff4d4d;
     padding: 5px 10px;
     font-size: 14px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
 }
 #word-list button:hover {
     background-color: #cc0000;
